@@ -1,76 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    
-    <title>dosa point</title>
-    <style>
-        body{
-            width: 90vw;
-            height: 90vh;
-            background-image: url(https://static.vecteezy.com/system/resources/thumbnails/053/315/208/small/crispy-dosa-with-sambar-chutney-south-indian-cuisine-foodgraphy-photo.jpeg);
-background-repeat: no-repeat;
-background-size: cover;
-        }
-.all{
-display: flex;
-flex-direction: row;
-
-/* justify-content: space-around; */
-}
-.home{
-    position: absolute;
-    left: 700px;
-}
-.items{
-    position:absolute;
-    left: 850px;
-}
-.contact{
-    position:absolute;
-    left: 955px;
-}
-.signup{
-    position:absolute;
-    left: 1100px;
-}
-.reveiw{
-    position: absolute;
-    left: 1215px;
-}
-
-button{
-    border: 2px solid rgb(246, 241, 241);
-    border-radius: 10px;
-    background-color: yellow;
-    height: 50px;
-    width: 150px;
-    position: absolute;
-    top: 250px ;
-    right: 185px;
-}
-button:hover{
-    scale: 1.1;
-}
-.name{
-    font-size: 60px;
-    color: rgb(179, 164, 80);
-    position: absolute;
-    top: 75px;
-    right: 50px;
-}
-    </style>
-</head>
-<body>
-    <nav>
-        <div class="all">
-    <div class="home" ><a target="_blank" href="location.html" style="color: beige;" >LOCATION</a></div>
-    <div class="items"><a target="_blank" href="items.html" style="color: beige;" >ITEMS</a></div>
-    <div class="contact"><a target="_blank" href="contact.html" style="color: beige;" >CONTACT</a></div>
-    <div class="signup"><a target="_blank" href="signup.html" style="color: beige;"  >SIGNUP</a></div>
-    <div class="reveiw"><a  href="reveiw.html" style="color: beige;"  >REVEIW</a></div>
-   <a target="_blank" href="items.html"><button><b>ORDER NOW</b></button></a> 
-
-    <div class="name">  <center>master chefs</center>  begum bazar dosa</div>
-</nav></div>
-</body>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RGB Color Slider</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <label for="red">R</label>
+        <input type="range" min="0" max="255" value="0" id="red" />
+      </div>
+      <div class="wrapper">
+        <label for="green">G</label>
+        <input type="range" min="0" max="255" value="0" id="green" />
+      </div>
+      <div class="wrapper">
+        <label for="blue">B</label>
+        <input type="range" min="0" max="255" value="0" id="blue" />
+      </div>
+      <div class="result">
+        <input type="text" value="rgb(0,0,0)" readonly />
+        <button id="copy-btn">Copy Color Code</button>
+      </div>
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
 </html>
